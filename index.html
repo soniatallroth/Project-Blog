@@ -48,10 +48,6 @@
                 font-size:0.75em;
             }
             
-            a{
-                color:white;
-            }
-            
             p{
                 font-family:sans-serif;
                 font-size:0.85em;
@@ -62,25 +58,29 @@
     </head>
     <body>
         
-        <h1>Sonia's blog</h1>
-        <img src="https://www.kasandbox.org/programming-images/cute/Heart.png" alt="Red heart" width="50px">
+        <div id="header">
+            <h1>Sonia's blog</h1>
+            <img src="https://www.kasandbox.org/programming-images/cute/Heart.png" alt="Red heart" width="50px">
+        </div>    
         
-        <h3>Nav bar</h3>
-        <ul id="contents">
-          <li><a href= "blog.html">Blog page fr</a></li>
-          <li><a href= "about.html">About page</a></li>
-          <li><a href= "contact.html">Contact me!</a></li>
-        </ul>
+        <div id="nav">
+            <h3>Nav bar</h3>
+               <ul id="contents">
+                   <li><a href= "blog.html">Blog page fr</a></li>
+                   <li><a href= "about.html">About page</a></li>
+                   <li><a href= "contact.html">Contact me!</a></li>
+               </ul>
+        </div>    
 
-        <h3>Blog Contents</h3>
-        <ul id="contents">
-            <a href="#first"><li>First post!</li></a>
-            <a href="#tallroth"><li>Tallroth realty start</li></a>
-            <a href="#learning"><li>Learning on Khan academy</li></a>
-            <a href="#benefits"><li>Benefits of online versus paper blogging</li></a>
-        </ul>
-        
-        <a href="about.html">About me!</a>
+        <div id="blogcontent">
+            <h3>Blog Contents</h3>
+                <ul id="contents">
+                    <a href="#first"><li>First post!</li></a>
+                    <a href="#tallroth"><li>Tallroth realty start</li></a>
+                    <a href="#learning"><li>Learning on Khan academy</li></a>
+                    <a href="#benefits"><li>Benefits of online versus paper blogging</li></a>
+                </ul>
+            
         
         <h2 id="first">First post!</h2>
         <h6>Posted on some date in some year</h6>
@@ -103,6 +103,8 @@
         <p>I would like to start a journal, and I might do one on paper. It helps me a lot to write out the things I am feeling, it feels like a release of things. I also like getting them out of my head. I sometimes like to type things out in my notes app or on a google document but I want something that is physical instead. I am going to find a notebook today and make it my journal scrapbook thing and use it for everything. Very excited to start modge pogeing in it.</p>
         
     <h4>Thank you for reading. This is the end of the page.</h4>
+            
+        </div>        
         
     </body>
 </html>
