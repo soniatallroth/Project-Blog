@@ -1,114 +1,157 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Project: Blog</title>
-        <link rel="stylesheet" href="https://use.typekit.net/jbl1jgh.css">
-        <link rel="stylesheet" href="normalize.css">
-        <style>
-            body{
-                background-color: rgb(233,196,106);
-                
-            }
-            
-            h1{
-                color:rgb(255, 255, 255);
-                font-family: acier-bat-noir, sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 5em;
-                text-align: center;
-                background-color: rgb(38,70,83);
-                margin: 0em;
-                
-                
-            }
-            
-            h2{
-                font-family:monospace;
-                font-size: 1.5em;
-                color:white;
-            }
-            
-            h3{
-               font-family:monospace;
-               color:white;
-               font-size:2em;
-               
-            }
-            
-            h4{
-                font-family:monospace;
-                color:white;
-            }
-            
-            h6{
-                color:white;
-                font-family:monospace;
-                font-size:0.75em;
-            }
-            
-            p{
-                font-family:sans-serif;
-                font-size:0.85em;
-                color:white;
-            }
-            
-            #blogcontent{
-                margin: 8px;
-                
-            }
-        </style>
-    </head>
-    <body>
-        
-        <div id="header">
-            <h1>Sonia's blog</h1>
-            <img src="https://www.kasandbox.org/programming-images/cute/Heart.png" alt="Red heart" width="50px">
-        </div>    
-        
-        <div id="nav">
-            <h3>Nav bar</h3>
-               <ul id="contents">
-                   <li><a href= "blog.html">Blog page fr</a></li>
-                   <li><a href= "about.html">About page</a></li>
-                   <li><a href= "contact.html">Contact me!</a></li>
-               </ul>
-        </div>    
+  <head>
+    <meta charset="utf-8" />
+    <title>Project: Blog</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jbl1jgh.css" />
+    <link rel="stylesheet" href="normalize.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Sonia's blog</h1>
+    </div>
 
-        <div id="blogcontent">
-            <h3>Blog Contents</h3>
-                <ul id="contents">
-                    <a href="#first"><li>First post!</li></a>
-                    <a href="#tallroth"><li>Tallroth realty start</li></a>
-                    <a href="#learning"><li>Learning on Khan academy</li></a>
-                    <a href="#benefits"><li>Benefits of online versus paper blogging</li></a>
-                </ul>
-            
-        
-        <h2 id="first">First post!</h2>
-        <h6>Posted on some date in some year</h6>
-        
-        <p>Something exciting did happen- I got a new Macbook! This is very exciting since I don't have a lot of new technology. This computer will last me many years and I am very excited to start using it to design websites and learn how to use the Adobe creative suite!</p>
-        
-        <h2 id="tallroth">Tallroth realty start</h2>
-        <h6>Posted on January 8th 2021</h6>
-        
-        <p>I have started working on my grandma's realty website. It is exciting since this website is real and I am actually using systems that I will use in the future to get a job.</p>
-        
-        <h2 id="learning">Learning on Khan Academy</h2>
-        <h6>Posted on January 7th</h6>
-        
-        <p>I am about halfway done with a Khan Academy class so far, and it has helped a little more than the previous course I was working on. The other course wasn't bad, I just like to watch videos on topics versus reading things. It helps to watch and observe someone do something rather than just to be bombarded with text.</p>
-        
-        <h2 id="benefits">Benefits of online versus paper blogging</h2>
-        <h6>Posted in January</h6>
-        
-        <p>I would like to start a journal, and I might do one on paper. It helps me a lot to write out the things I am feeling, it feels like a release of things. I also like getting them out of my head. I sometimes like to type things out in my notes app or on a google document but I want something that is physical instead. I am going to find a notebook today and make it my journal scrapbook thing and use it for everything. Very excited to start modge pogeing in it.</p>
-        
-    <h4>Thank you for reading. This is the end of the page.</h4>
-            
-        </div>        
-        
-    </body>
+    <style>
+      body {
+        background-color: rgb(233, 196, 106);
+      }
+
+      h1 {
+        color: rgb(255, 255, 255);
+        font-family: acier-bat-noir, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 5em;
+        text-align: center;
+        background-color: rgb(38, 70, 83);
+        margin: 0em;
+      }
+
+      h2 {
+        font-family: monospace;
+        font-size: 1.5em;
+        color: white;
+      }
+
+      h3 {
+        font-family: monospace;
+        color: white;
+        font-size: 2em;
+      }
+
+      h4 {
+        font-family: monospace;
+        color: white;
+      }
+
+      h6 {
+        color: white;
+        font-family: monospace;
+        font-size: 0.75em;
+      }
+
+      p {
+        font-family: sans-serif;
+        font-size: 0.85em;
+        color: green;
+      }
+
+      #blogcontent {
+        margin: 8px;
+      }
+
+      #nav {
+        background-color: rgb(38, 70, 83);
+        overflow: hidden;
+      }
+
+      #nav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      #nav a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+    </style>
+
+    <div id="nav">
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact me!</a>
+    </div>
+
+    <img
+      src="images/sonia-profile-pic.jpg"
+      alt="Sonia sitting on a pile of rocks"
+      width="100px"
+    />
+
+    <div id="blogcontent">
+      <h3>Blog Contents</h3>
+      <ul id="contents">
+        <a href="#first"><li>First post!</li></a>
+        <a href="#tallroth"><li>Tallroth realty start</li></a>
+        <a href="#learning"><li>Learning on Khan academy</li></a>
+        <a href="#benefits"
+          ><li>Benefits of online versus paper blogging</li></a
+        >
+      </ul>
+
+      <h2 id="first">First post!</h2>
+      <h6>Posted on some date in some year</h6>
+
+      <p>
+        Something exciting did happen- I got a new Macbook! This is very
+        exciting since I don't have a lot of new technology. This computer will
+        last me many years and I am very excited to start using it to design
+        websites and learn how to use the Adobe creative suite!
+      </p>
+
+      <h2 id="tallroth">Tallroth realty start</h2>
+      <h6>Posted on January 8th 2021</h6>
+
+      <p>
+        I have started working on my grandma's realty website. It is exciting
+        since this website is real and I am actually using systems that I will
+        use in the future to get a job.
+      </p>
+
+      <h2 id="learning">Learning on Khan Academy</h2>
+      <h6>Posted on January 7th</h6>
+
+      <p>
+        I am about halfway done with a Khan Academy class so far, and it has
+        helped a little more than the previous course I was working on. The
+        other course wasn't bad, I just like to watch videos on topics versus
+        reading things. It helps to watch and observe someone do something
+        rather than just to be bombarded with text.
+      </p>
+
+      <h2 id="benefits">Benefits of online versus paper blogging</h2>
+      <h6>Posted in January</h6>
+
+      <p>
+        I would like to start a journal, and I might do one on paper. It helps
+        me a lot to write out the things I am feeling, it feels like a release
+        of things. I also like getting them out of my head. I sometimes like to
+        type things out in my notes app or on a google document but I want
+        something that is physical instead. I am going to find a notebook today
+        and make it my journal scrapbook thing and use it for everything. Very
+        excited to start modge pogeing in it.
+      </p>
+
+      <h4>Thank you for reading. This is the end of the page.</h4>
+    </div>
+  </body>
 </html>
